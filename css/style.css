@@ -174,8 +174,19 @@ header {
 
 
 
-
 /* Media queries */
+
+
+
+
+@media (min-width:992px) {
+    
+    .main__container-mobile {
+        display: none;
+    }
+
+    
+}
 
 @media (max-width: 991px) {
 
@@ -184,6 +195,10 @@ header {
     }
 
     .main__container {
+        display: none;
+    }
+
+    .main__container-mobile {
         padding: 0.5rem 0.5rem;
     }
 
@@ -230,38 +245,36 @@ header {
         display: flex;
         height: 100%;
         justify-content: center;
+        margin: 0.5rem;
     }
 
     .imgpersonal__home {
-        max-width: 312px;
-        max-height: 284px;
+        max-width: 372px;
+        max-height: 344px;
     }
 
 
     .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: inline-block;
+        padding: 1rem 1.5rem;
         color: #292730;
         background-color: #FCDA69;
         border-radius: 1rem;
         font-size: 1rem;
         font-weight: 400;
-        margin: 1rem;
-        padding: 1rem 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 2rem;
         text-decoration: none;
-        
     }
-
+    
     .text-button {
-        display: flex;
-        justify-content: center;
+        display: inline-block;
         font-size: 1rem;
         font-weight: 400;
         text-decoration: none;
         color: #141313;
-        padding: 1rem;
-
+        padding: 0.5rem;
+    
     }
 
 
@@ -335,9 +348,40 @@ header {
         color: #5a4ba6;
     }
 
+
 }
 
+@media (max-width:681px) {
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #292730;
+        background-color: #FCDA69;
+        border-radius: 1rem;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 1rem;
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+        
+    }
 
+    .text-button {
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        font-weight: 400;
+        text-decoration: none;
+        color: #141313;
+        padding: 1rem;
+    }
+
+    .imgpersonal__home {
+        max-width: 312px;
+        max-height: 284px;
+    }
+}
 
 @media (min-width:850px) {
 
