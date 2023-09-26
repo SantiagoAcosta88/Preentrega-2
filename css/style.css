@@ -174,6 +174,60 @@ header {
 
 
 
+/* Estilos para el footer */
+
+.footer {
+    margin: 2rem 0 0 0;
+    background-color: #fafafa;
+    
+}
+
+.footer__container {
+    padding: 2rem 2rem;
+}
+
+
+.footer__socialmedia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer__socialmedia p {
+    padding: 1rem 0.5rem 1rem 0;
+}
+
+.footer__socialmedia-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0.25rem;
+}
+
+.footer__iconsocialmedia {
+    padding: 0.25rem;
+}
+
+.footer__copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer__img-copyright {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+
+
+
+
+
+
 /* Media queries */
 
 
@@ -262,8 +316,7 @@ header {
         border-radius: 1rem;
         font-size: 1rem;
         font-weight: 400;
-        margin-right: 1.5rem;
-        margin-top: 2rem;
+        margin: 2rem 1.5rem;
         text-decoration: none;
     }
     
@@ -287,8 +340,8 @@ header {
 @media (max-width: 1065px) {
 
     .imgpersonal__home {
-        width: 445px;
-        height: 398px;
+        width: 475px;
+        height: 428px;
     }
 
     .main__imgpersonal {
@@ -457,5 +510,36 @@ header {
         font-size: 1.125rem;
         font-weight: 300;
 
+    }
+
+    .footer__socialmedia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer__socialmedia-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0.25rem;
+    }
+    
+    .footer__socialmedia p {
+        padding: 2rem 0 0 0;
+    }
+    
+    .footer__iconsocialmedia {
+        padding: 0.25rem;
+    }
+    
+    .footer__copyright {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0.25rem;
     }
 }
