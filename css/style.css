@@ -482,6 +482,11 @@ header {
         border-radius: 2rem;
         color: #5a4ba6;
     }
+
+    .navbar__press-on:hover {
+        color: #ffffff;
+        font-weight: 600;
+    }
 }
 
 
